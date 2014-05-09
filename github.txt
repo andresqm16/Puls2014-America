@@ -1,0 +1,40 @@
+﻿ftp
+rtansmisino de archivos
+hosting barato normal ... public_html/<------ FTP
+	index.php
+images
+leonidas.jpg
+www.dogecoin.com
+
+1.multiples personas en el equipo
+2. NO HYA CULPA	
+3. 
+---------------------------------------
+
+SISTEMA DE CONTROL DE VERSIONES
+	
+	SVN: Subversion/ Mercurial / TFS / CVS / GIT
+Github:
+1. La red socal de programadores
+2. Web / Apps
+3.Mucho mas facil
+-------------------
+Como funciona Github:
+Repositorio de codigo Github: (master)
+	
+	Clon local
+		commit- sync
+1.Multiples versiones del mismo codigo
+2. Cambios Delta	
+	Base de datos atomica del codigo
+3. Historial de cada archivo
+4. mutiples personas trabajan sobre el mismo archivo
+5.CULPA AL CULPABLE
+6. Ramas (Branches)
+	*master (Github.com) REPO PRINCIPAL
+	* master (DISCO DURO) REPO LOCAL
+		*master
+			------- MERGRE (experimenta master)
+		* Experimental local
+		
+	master (SERVIDOR.COM) REPO REPRODUCCION
