@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fuentes/OpenSans-Regular-webfont.eot');
+    src: url('fuentes/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fuentes/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fuentes/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 a
 {
 	color: #22ece0;
@@ -5,7 +15,7 @@ a
 body
 {
 	background: #eee;
-	font-family: Arial;
+	font-family:'open_sansregular' ;
 	font-size: 16px;
 }
 footer
