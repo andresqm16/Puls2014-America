@@ -11,18 +11,18 @@
 }THIS IS WITH Fontsquirrel*/
 
 @font-face {
-	font-family: 'puls4';
-	src:url('fuentes/puls4.eot?-xtm34y');
-	src:url('fuentes/puls4.eot?#iefix-xtm34y') format('embedded-opentype'),
-		url('fuentes/puls4.woff?-xtm34y') format('woff'),
-		url('fuentes/puls4.ttf?-xtm34y') format('truetype'),
-		url('fuentes/puls4.svg?-xtm34y#puls4') format('svg');
+	font-family: 'puls14';
+	src:url('fuentes/puls14.eot?-qj1amc');
+	src:url('fuentes/puls14.eot?#iefix-qj1amc') format('embedded-opentype'),
+		url('fuentes/puls14.woff?-qj1amc') format('woff'),
+		url('fuentes/puls14.ttf?-qj1amc') format('truetype'),
+		url('fuentes/puls14.svg?-qj1amc#puls14') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'puls4';
+	font-family: 'puls14';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -35,15 +35,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Pincel-Viejo:before {
+.icon-pencil:before {
 	content: "\e600";
-	margin-right: 0.5em;
+	margin-right: .5em;
 }
-.icon-Estrella:before {
+.icon-star:before {
 	content: "\e601";
-	position:relative;
+	position: relative;
 	top: .1em;
-	margin-right: 0.4em;
+	margin-right: .5em;
 }
 .icon-Flecha-Arriba:before {
 	content: "\e602";
@@ -52,11 +52,16 @@
 	content: "\e603";
 }
 
-
 a
 {
 	color: #22ece0;
 }
+aside
+{
+	display: none;
+}
+/*Todo lo contenta la etiqueta aside no va aparecer en el viewport, sino hasta 
+que los media queries le indiquen que pueden hacerlo*/
 body
 {
 	background: #eee;
@@ -133,7 +138,7 @@ nav ul
 {
 	list-style: none;
 	margin: 0;
-	padding: 0 6em 0 .5em;	
+	padding: 0 6em 0 0.5em;	
 }
 nav ul li
 {
@@ -146,6 +151,11 @@ nav ul li a
 	display: block;
 	padding: 0.5em;
 	text-decoration: none;
+	-webkit-transition:0.3s;
+}
+nav ul li a:hover
+{
+	background: #344b54;
 }
 nav ul #publicar_nav
 {
@@ -240,14 +250,58 @@ nav ul  #publicar_nav a
 }
 #contenido .item .votacion .up
 {
-	color: #EC2222 ;
+	color: green ;
 }
 #contenido .item .votacion .down
 {
-	color: #22EC22  ;
+	color: #EC2222   ;
 }
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
 {
 	float:right;
+}
+/*El codigo que aparece a continuacion es un "mediaquarie."
+el @media screen "dice" cuando  la pantalla  tenga un ancho min de
+800px todo lo que contenga la clase "contenido" tenga un overflow hidden,
+luego todo lo que tenga in id "item" tome el 48% de la pantalla y que se mueva hacia
+la izquierda, para despues solo los elementos 2 3 5 tengan un margen de 2%.*/
+@media screen and (min-width: 800px){
+
+	#contenido
+	{
+		overflow: hidden;
+	}
+
+	#contenido .item
+	{
+		width: 48%;
+		float: left;
+		
+	}
+	#contenido .item:nth-child(odd){
+	margin-right: 2%; 
+	}
+}
+
+@media screen and (min-width: 1000px){
+	aside
+	{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 25%; 
+	}
+	aside video
+	{
+		width: 100%;
+	}
+	/*Este ancho se lo aplicamos a la etiqueta video para que tenga flexibilidad a la hora
+	de estar cambiando la pantalla o vallamos a otra pantalla de mas chica o grande */
+	aside 
+	{
+	 display: block;
+	}
+	/*Es hasta el momento en que el ancho de pantalla tiene un
+	minimo de mil pixeles que todo lo que contenga la etiqueta aside aparecera*/
 }
