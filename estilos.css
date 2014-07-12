@@ -181,9 +181,10 @@ nav ul  #publicar_nav a
 {
 	background: white;
 	border-bottom: 3px solid  #22bce0;
+	margin-bottom: 3em;
 	min-height: 128px;
 	position: relative;
-	margin-bottom: 3em;
+	
 }
 #contenido .item .autor_item
 {
@@ -233,12 +234,12 @@ nav ul  #publicar_nav a
 {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
-	left:10%;
+	left: 1%;
 	margin-top: 3px;
-	padding: 0.5em 1em ;
+	padding: 0.2em 0.5em;
 	position: absolute;
-	right:3%;
-	top:100%;
+	top: 100%;
+	width: 95%;
 }
 #contenido .item .votacion a
 {
@@ -298,10 +299,6 @@ la izquierda, para despues solo los elementos 2 3 5 tengan un margen de 2%.*/
 	}
 	/*Este ancho se lo aplicamos a la etiqueta video para que tenga flexibilidad a la hora
 	de estar cambiando la pantalla o vallamos a otra pantalla de mas chica o grande */
-	aside 
-	{
-	 display: block;
-	}
 	/*Es hasta el momento en que el ancho de pantalla tiene un
 	minimo de mil pixeles que todo lo que contenga la etiqueta aside aparecera*/
 }
